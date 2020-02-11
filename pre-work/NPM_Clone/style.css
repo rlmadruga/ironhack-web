@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900&display=swap');
 
 html, body{
   background-color: white;
@@ -6,6 +6,7 @@ html, body{
 
 body{
   font-family: 'Poppins';
+  margin: 0 30px;
 }
 
 header > div
@@ -17,20 +18,25 @@ header > div
   border-bottom: 1px solid lightgray;
 }
 
+header span, li
+{
+  font-weight: 600;
+  font-size: 12px;
+}
 .nav
 {
   width: 600px;
 }
 
-.nav ul
+nav ul
 {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-.nav a
+nav a
 {
   text-decoration: none;
   color: black;
@@ -44,14 +50,16 @@ header > div
 
 .logo
 {
-  width: 30px;
+  width: 40px;
 }
 
 .magglass
 {
-  background-color: lightgray;
-  width: 34px;
+  background-color: #f2f2f2;
   margin-left: 9px;
+  height: 15px;
+  opacity: 0.6;
+  padding: 9px;
 }
 
 .pos-nav
@@ -59,44 +67,51 @@ header > div
   border-style: none;
   display: flex;
   justify-content: space-around;
+  box-shadow: 0 5px 8px 0px #ccc;
  
 }
 
-.form{
+form{
   padding: 5px 0;
   width: 85%;
+  display: flex;
+  
 }
 
-.form label
+form label
 {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.form input
+form input
 {
   color: rgba(0, 0, 0, 0.5);
-  width: 85%;
+  width: 100%;
   height: 30px;
-  background-color: lightgray;
-  border: 1px solid lightgray;
+  background-color: #f2f2f2;
+  border: 0.1px solid rgb(232, 217, 217, 0.3);
+  
 }
 
-.form button
+form button
 {
   border: 1px solid lightgray;
   color: white;
   background-color: #FB3E44;
-  padding: 9px;
+  padding: 8px 10px;
   margin-left: 0;
 }
 
 .button-join
 {
   border: 1px solid lightgrey;
+  border-top-color: black;
   color: darkblue;
   background-color: white;
-  padding: 9px;
+  padding: 5px 15px;
   margin-left: 0;
+  font-family: 'Poppins';
+ 
 }
 
 .button-login
@@ -106,6 +121,7 @@ header > div
   padding: 8px;
   background-color: white;
   margin-left: 0;
+  font-family: 'Poppins';
 }
 
 #section1
@@ -114,40 +130,49 @@ header > div
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  height: 600px;
-  background-color: rgba(232, 217, 217, 0.3);
+  height: 540px;
+  background-color: rgba(232, 217, 217, 0.4);
 }
 
-#section1 > h2
+#section1 h2
 {
   margin-top: 70px;
-  font-size: 5em;
+  font-size: 4.8em;
+  font-weight: bolder;
+}
+
+#section1  p 
+{
+  text-align: center;
+  font-weight: 500;
 }
 
 #section1 > article
 {
-  width: 400px;
+  width: 445px;
+  margin-bottom: 20px;
 }
 
 #section1 > div
 {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 #see-plan
 {
   background-color: #FB3B49;
   color: white;
-  padding: 14px 50px;
+  padding: 14px 70px;
   text-align: center;
   text-decoration: none;
   box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  font-weight: 600;
 }
 
 #join-free
 {
-  margin-left: 10px;
-  background-color: rgba(232, 217, 217, 0.3); 
+  margin-left: 50px;
+  background-color: rgba(255, 255, 255); 
   color: black;
   text-align: center;
   text-decoration: none;
@@ -157,7 +182,7 @@ header > div
 
 #section2
 {
-  margin: 50px 0;
+  margin: 40px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,34 +191,42 @@ header > div
 
 }
 
+#section2 img
+{
+  height: 200px;
+  padding-bottom: 50px; 
+}
+
 #section2 > h3
 {
   background-color: rgba(255, 204, 53, 0.4);
   transform: skew(9deg,0deg);
   font-style: italic;
   font-size: 2em;
+  padding: 0 20px;
+  height: 40px;
 }
 
 #section2 > article
 {
-  width: 600px;
+  width: 765px;
   font-size: 1em;
   text-align: center;
 }
 
 #section3
 {
-  margin: 50px;
+  margin: 50px 80px;
   display: flex;
   justify-content: center;
-  align-content: center;
+  /*align-content: center;*/
   flex-flow: row wrap;
 }
  
  #section3 > div
  {
    padding: 30px;
-   width: 200px;
+   width: 250px;
  }
 
 #section3 h4
@@ -214,4 +247,7 @@ header > div
   text-align: center;
   text-decoration: none;
   box-shadow: 8px 8px 0 rgba(128,83,35,.2);
+  margin: 50px;
+  font-family: 'Poppins';
+  font-weight: bolder;
 }
